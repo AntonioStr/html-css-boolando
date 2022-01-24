@@ -1,0 +1,129 @@
+/* Generale */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    /* width: 60%; */
+    margin: 20px auto;
+}
+
+/* Blocco prodotto */
+
+.prodotto {
+    width: calc(100% / 3 - 20px );
+    float: left;
+    margin: 10px;
+}
+
+/* Immagine */
+
+.immagine-prodotto {
+    position: relative;
+}
+
+.prodotto .immagine-prodotto img {
+    width: 100%;
+}
+
+.prodotto .card-tag {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.prodotto .immagine-prodotto .prima-immagine {
+    display: block;
+}
+
+.prodotto .immagine-prodotto .seconda-immagine {
+    display: none;
+}
+
+.prodotto .immagine-prodotto:hover .prima-immagine {
+    display: none;
+}
+
+.prodotto .immagine-prodotto:hover .seconda-immagine {
+    display: block;
+}
+
+/* Tag (Sconto-eco) prodotto */
+
+.prodotto .card-tag span {
+    padding: 2px 5px;
+    color: #fff;
+}
+
+.prodotto .card-tag .sconto {
+    font-size: 14px;
+    background-color: red;
+    font-weight: bold;
+}
+
+.prodotto .card-tag .eco {
+    font-size: 14px;
+    background-color: green;
+}
+
+/* Cuore "Preferito" */
+
+.heart {
+    position: absolute;
+    background-color: #fff;
+    font-size: 26px;
+    padding: 8px 16px;
+    top: 20px;
+    right: 0px;
+}
+
+/* Descrizione prodotto */
+
+.titolo-prodotto {
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.descrizione-prodotto {
+    margin: 15px 0 50px;
+}
+
+.prezzo-scontato {
+    font-weight: 600;
+    color: red;
+}
+
+/* debug */
+
+/* .debug .container {
+    height: 1200px;
+    background-color: lightgrey;
+}
+
+.debug .prodotto {
+    height: 600px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+.debug .immagine-prodotto {
+    height: 550px;
+    background-color: lightpink;
+} */
+
+/* .debug .descrizione-prodotto {
+    height: 70px;
+    background-color: lightblue;
+} */
